@@ -1,0 +1,634 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+:root {
+  --primary-color: #007AF3;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.misi-logo{
+  font-weight: bold;
+  font-family: cursive;
+}
+.jaya-logo{
+  font-weight: bold;
+  color: rgb(141, 207, 158);
+  font-family: cursive;
+}
+.err-msg{
+  color: red;
+}
+body{
+  background-image: url("./component/images/Frame 1.1.png");
+  
+}
+a{
+  text-decoration: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --primary-color: #007AF3;
+}
+
+.first{
+  background-color: #007AF3;
+}
+.container{
+  padding-top: 1.5em;
+  margin-left: 0.5em;
+}
+h1{
+  margin-left: 2em;
+}
+
+.subhead,.addUser{
+  margin-left: 5em;
+}
+.hero-img{
+  width: auto;
+
+}
+.user{
+  padding: 1em;
+}
+.addUser{
+  background-color:aliceblue ;
+  border-radius: 00.5em;
+  padding: 0.5em;
+}
+.login{
+  margin: 20%;
+  margin-top: 5em;
+ background-color: rgb(146, 236, 146);
+ border-radius: 1em;
+ padding: 5%;
+}
+.login h1{
+  margin-left: 42%;
+  
+}
+.login-logo{
+  width: 20%;
+  border-radius: 1em;
+  margin-left: 40%;
+}
+.user-session{
+  color: white;
+  margin-right: 1em;
+}
+
+@media only screen and (max-width: 1024px) {
+ 
+  .login-logo{
+    margin-top: 10%;
+    width: 50%;
+    margin-left: 28%;
+  }
+  .login h1{
+    
+    margin-left: 28%;
+    margin-top: -20%;
+  }
+  .container{
+    display: flex;
+    
+  }
+  h1{
+    padding-top: 3em;
+  }
+  .hero-img{
+    margin-left: 20em;
+  }
+
+  .sidebar{
+    display: none;
+  }
+  .dashboard{
+    margin: 30px;
+  }
+ 
+  .dashboard-student{
+    margin-top: 1em;
+    padding: 3em;
+    border: 1;
+    border-color: yellowgreen;
+    background-color: rgb(146, 236, 146);
+    border-radius: 1em;
+    
+  }
+
+  .dashboard-staff{
+    margin-top: 1em;
+    padding: 3em;
+    border: 1;
+    border-color: yellowgreen;
+    background-color: rgb(146, 236, 146);
+    border-radius: 1em;
+    
+  }
+  .dashboard-subjects{
+    margin-top: 1em;
+    padding: 3em;
+    border: 1;
+    border-color: yellowgreen;
+    background-color: rgb(146, 236, 146);
+    border-radius: 1em;
+    
+  }
+  .dashboard-teachers{
+    margin-top: 1em;
+    padding: 3em;
+    border: 1;
+    border-color: yellowgreen;
+    background-color: rgb(146, 236, 146);
+    border-radius: 1em;
+    
+  }
+  .info{
+    text-decoration: none;
+    opacity: 3;
+    background-color: rgb(48, 122, 48);
+    border-radius: 1em;
+    padding: 0.5em;
+    color: white;
+    border: 2px solid;
+    border-color: rgb(48, 122, 48);
+    text-decoration: white;
+  }
+  .info:hover{
+    background-color: white;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  .table_list{
+    text-align: center;
+    overflow-x:auto;
+    margin-left: 12px;
+    margin-top: 3em;
+    margin-right: 12px;
+    
+  }
+  table{
+    font-family: arial, sans-serif;
+    width: 100%;
+    border-color:  rgb(48, 122, 48);
+    border-radius: 1em;
+   
+  }
+  
+  tr td{
+    padding: 0.5em;
+    background-color: whitesmoke;
+   
+  }
+  
+  .thead{
+    background-color: rgb(48, 122, 48);
+    color: white;
+    border-radius: 0.5em;
+    
+    
+  }
+  .btn-update{
+    background-color:var(--primary-color);
+    color: white;
+    padding: 0.2em;
+    border-radius: 0.3em;
+    
+  }
+  .btn-del{
+    background-color: red;
+    color: white;
+    padding: 0.2em;
+    border-radius: 0.3em;
+  }
+  .list-title{
+    background-color: rgb(48, 122, 48);
+    color: white;
+    margin-right: 2.5em;
+    margin-left: 2.5em;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  .btn-update:hover{
+    background-color: white;
+    color:var(--primary-color);
+    border: 1px solid;
+    border-color: var(--primary-color);
+  }
+  .btn-del:hover{
+    background-color: white;
+    color: red;
+    border: 1px solid;
+    border-color: red;
+  }
+  .dashboard-title{
+    background-color: rgb(48, 122, 48);
+    padding: 10px;
+    padding-left: 1em;
+    margin-right: 3em;
+    border-radius: 0.4em;
+    color: white;
+  }
+  .btn-logout{
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+      padding: 0.5em;
+      margin-right: 1em;
+      border-radius: 0.8em;
+      
+  }
+  .btn-logout:hover{
+     
+      background-color: white;
+      color: var(--primary-color);
+      border-color: var(--primary-color);
+  }
+  
+  .features{
+  
+    background-color: whitesmoke;
+    margin: 2em;
+    padding: 1em;
+    border-radius: 2em;
+    border: 2px solid;
+    border-color: rgb(48, 122, 48);
+   
+   
+  }
+  .features-title{
+    text-align: center;
+    background-color: rgb(48, 122, 48);
+    padding: 0.2em;
+    border-radius: 0.6em;
+    color: white;
+  }
+  .features-section{
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+  }
+  .subjectList{
+    margin-left: 10%;
+    margin-top: 3em;
+    
+  }
+  .subjectList div{
+    
+    background-color: rgb(146, 236, 146);
+    
+    margin: 1em;
+    margin-right: 12%;
+    padding:2em;
+    
+    border-radius: 1em;
+    color: black;
+  }
+  .subjectList div:hover{
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid;
+    border-color: rgb(48, 122, 48);
+    
+  }
+  .subject-amount{
+    float: right;
+    margin-right: 1em;
+    
+  }
+}
+  
+
+@media only screen and (min-width: 1025px) {
+  .dashboard-title{
+    background-color: rgb(48, 122, 48);
+    margin-right: 80%;
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 0.4em;
+    color: white;
+  }
+  .sidebar{
+    background-color: rgb(173, 173, 173);
+    height: 100%;
+    position: fixed;
+   
+  }
+  .sidebar, li{
+    list-style: none;
+    padding: 1em;
+    padding-left: 0.1em;
+  }
+  
+  .student-menu{
+    width: 3em;
+  }
+  .staff-menu{
+    width: 3em;
+  }
+  .subjects-menu{
+    width: 3em;
+  }
+  .teachers-menu{
+    width: 3em;
+  }
+  .stu {
+    display: none;
+    position:fixed;
+    color: #282c34;
+    background-color:rgb(146, 236, 146);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    
+  }
+  .student-menu:hover+.stu{
+    display: inline-flex;
+    margin-left: 0.1em;
+    
+    
+  }
+  .staff-menu:hover+.stu{
+    display: inline-flex;
+    margin-left: 0.4em;
+  }
+  .subjects-menu:hover+.stu{
+    display: inline-flex;
+    margin-left: 0.4em;
+  }
+  .teachers-menu:hover+.stu{
+    display: inline-flex;
+    margin-left: 0.4em;
+  }
+  
+  .dashboard{
+    margin-left: 20%;
+    margin-top: 3em;
+  }
+
+  .dashboard-student{
+   
+    margin-right: 35%;
+    padding: 3em;
+    padding-right: 20%;
+    border-color: yellowgreen;
+    background-color: rgb(146, 236, 146);
+    border-radius: 1em;
+    float: right;
+  }
+  .dashboard-student:hover{
+    background-color: whitesmoke;
+    border: 2px solid;
+    border-color: rgb(48, 122, 48);
+  }
+
+  .dashboard-staff{
+   
+   
+    padding: 3em;
+    padding-right: 18%;
+    border: 1;
+    border-color: yellowgreen;
+    background-color: rgb(146, 236, 146);
+    border-radius: 1em;
+    float: left;
+    
+  }
+  .dashboard-staff:hover{
+    background-color: whitesmoke;
+    border: 2px solid;
+    border-color: rgb(48, 122, 48);
+  }
+  .dashboard-subjects{
+    margin-top: 1em;
+    margin-right: 35%;
+    padding: 3em;
+    padding-right: 20%;
+    border-color: yellowgreen;
+    background-color: rgb(146, 236, 146);
+    border-radius: 1em;
+    float: right;
+  }
+  .dashboard-subjects:hover{
+    background-color: whitesmoke;
+    border: 2px solid;
+    border-color: rgb(48, 122, 48);
+  }
+
+  .dashboard-teachers{
+    margin-top: 1em;
+    padding: 3em;
+    padding-right: 18%;
+    border: 1;
+    border-color: yellowgreen;
+    background-color: rgb(146, 236, 146);
+    border-radius: 1em;
+    float: left;
+  }
+  .dashboard-teachers:hover{
+    background-color: whitesmoke;
+    border: 2px solid;
+    border-color: rgb(48, 122, 48);
+    
+  }
+  .info{
+    text-decoration: none;
+    opacity: 3;
+    background-color: rgb(48, 122, 48);
+    border-radius: 1em;
+    padding: 0.5em;
+    color: white;
+    border: 2px solid;
+    border-color: rgb(48, 122, 48);
+    text-decoration: white;
+  }
+  .info:hover{
+    background-color: white;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  .table_list{
+    text-align: center;
+    
+    color: black;
+    margin-left: 18%;
+    margin-top: 3em;
+    margin-right: 10%;
+    
+  }
+  table{
+    font-family: arial, sans-serif;
+    width: 100%;
+    
+  }
+  tr td{
+    padding: 1em;
+    background-color: whitesmoke;
+    
+  }
+ 
+  .thead{
+    background-color: rgb(48, 122, 48);
+    color: white;
+    border-radius: 0.5em;
+    
+  }
+  .btn-update{
+    background-color: var(--primary-color);
+    color: white;
+    margin-right: 0.1em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    text-decoration: none;
+  }
+  .btn-del{
+    background-color: red;
+   
+    color: white;
+    
+    padding: 0.5em;
+    border-radius: 0.5em;
+    text-decoration: none;
+    
+  }
+  .btn-update:hover{
+    background-color: white;
+    color:var(--primary-color);
+    border: 1px solid;
+    border-color: var(--primary-color);
+  }
+  .btn-del:hover{
+    background-color: white;
+    color: red;
+    border: 1px solid;
+    border-color: red;
+  }
+  
+  .list-title{
+    background-color: rgb(48, 122, 48);
+    color: white;
+    margin-right: 10em;
+    margin-left: 10em;
+    border-radius: 0.6em;
+    margin-bottom: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .features{
+    margin-left: 25%;
+    margin-top: 3em;
+    margin-right: 18%;
+    background-color: whitesmoke;
+    padding: 3em;
+    border-radius: 2em;
+    border: 2px solid;
+    border-color: rgb(48, 122, 48);
+   
+  }
+  .features-title{
+    text-align: center;
+    background-color: rgb(48, 122, 48);
+    margin-right: 5em;
+    margin-left: 5em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0.6em;
+    color: white;
+  }
+  .features-section{
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .btn-logout{
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+      padding: 0.5em;
+      margin-right: 1em;
+      border-radius: 0.8em;
+      
+  }
+  .btn-logout:hover{
+     
+      background-color: white;
+      color: var(--primary-color);
+      border-color: var(--primary-color);
+  }
+  .subjectList{
+    margin-left: 20%;
+    margin-top: 3em;
+    
+  }
+  .subjectList div{
+    
+    background-color: rgb(146, 236, 146);
+    margin: 2em;
+    margin-right: 20%;
+    padding:2em;
+    border-radius: 1em;
+    color: black;
+  }
+  .subjectList div:hover{
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid;
+    border-color: rgb(48, 122, 48);
+    
+  }
+  .subject-amount{
+    float: right;
+    margin-right: 1em;
+    
+  }
+}
+
+.insert-section{
+  color: black;
+  text-decoration: none;
+ 
+}
+.insert-section:hover{
+  color: black;
+  
+}
+.color-nav{
+  background-color: rgb(1, 68, 1);
+}
+
+
